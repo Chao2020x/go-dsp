@@ -39,7 +39,7 @@ func Example_1() {
 		mag = append(mag, cmplx.Abs(v))
 	}
 	var f []float64
-	for i, _ := range mag {
+	for i := range mag {
 		kk := float64(i*fs) / float64(len(mag))
 		f = append(f, kk)
 	}
@@ -69,7 +69,7 @@ func Example_1() {
 	}
 
 	var ti []float64
-	for i, _ := range xifft {
+	for i := range xifft {
 		ti = append(ti, float64(i)/float64(fs))
 	}
 	utils.NewVChart(ti, xifft, "时间/s", "幅值", "IFFT 后的信号波形").SaveWavePicture("chapter1\\正弦波-IFFT后的信号波形")
@@ -93,8 +93,9 @@ func Example_2() {
 	for _, v := range fft_value {
 		mag = append(mag, cmplx.Abs(v))
 	}
+
 	var f []float64
-	for i, _ := range mag {
+	for i := range mag {
 		kk := float64(i*fs) / float64(len(mag))
 		f = append(f, kk)
 	}
@@ -123,9 +124,10 @@ func Example_2() {
 		xifft = append(xifft, real(v))
 	}
 
-	var ti []float64
-	for i, _ := range xifft {
-		ti = append(ti, float64(i)/float64(fs))
+	ti_len := len(xifft)
+	var ti []float64 = make([]float64, ti_len)
+	for i := 0; i < ti_len; i++ {
+		ti[i] = float64(i) / float64(fs)
 	}
 	utils.NewVChart(ti, xifft, "时间/s", "幅值", "IFFT 后的信号波形").SaveWavePicture("chapter1\\白噪声-IFFT后的信号波形")
 }

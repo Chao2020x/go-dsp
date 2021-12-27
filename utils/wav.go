@@ -40,7 +40,5 @@ func WavRead_f32(Filename string) ([]float32, int, error) {
 		fmt.Println("WavRead_f32 ReadFloats failed, err:", err)
 		return nil, 0, err
 	}
-
-	fmt.Println("data_f32", gwav.AudioFormat)
 	return data_f32, int(gwav.SampleRate), nil
 }
