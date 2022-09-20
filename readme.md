@@ -1,4 +1,4 @@
-# Sound_Signal_Process_Golang
+# go-dsp
 
  语音信号处理试验 代码主要是Go语言实现的
 

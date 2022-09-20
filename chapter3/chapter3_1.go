@@ -3,7 +3,7 @@ package chapter3
 import (
 	"fmt"
 
-	"github.com/mjibson/go-dsp/window"
+	"go-dsp/utils/window"
 )
 
 func Chapter3_1_1() {

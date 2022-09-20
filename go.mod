@@ -1,6 +1,6 @@
-module Sound_Signal_Process_Golang
+module go-dsp
 
-go 1.17
+go 1.18
 
 require (
 	github.com/chfenger/goNum v0.0.0-20191211064013-a00d841c1e7b

@@ -1,10 +1,10 @@
 package chapter3
 
 import (
-	"Sound_Signal_Process_Golang/utils"
 	"fmt"
+	"go-dsp/utils"
 
-	"github.com/mjibson/go-dsp/window"
+	"go-dsp/utils/window"
 )
 
 // Chapter3_2_1 短时时域分析

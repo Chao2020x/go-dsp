@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mjibson/go-dsp/wav"
+	"go-dsp/utils/wav"
 )
 
 func WavRead_f64(Filename string) ([]float64, int, error) {

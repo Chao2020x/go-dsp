@@ -1,11 +1,11 @@
 package chapter1
 
 import (
-	"Sound_Signal_Process_Golang/utils"
+	"go-dsp/utils"
 	"math"
 	"math/cmplx"
 
-	"github.com/mjibson/go-dsp/fft"
+	"go-dsp/utils/fft"
 )
 
 // ***************1.正弦波****************

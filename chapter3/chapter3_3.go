@@ -1,11 +1,11 @@
 package chapter3
 
 import (
-	"Sound_Signal_Process_Golang/utils"
 	"fmt"
+	"go-dsp/utils"
 	"math"
 
-	"github.com/mjibson/go-dsp/window"
+	"go-dsp/utils/window"
 )
 
 func Chapter3_3_1() {

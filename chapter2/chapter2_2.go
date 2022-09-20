@@ -1,8 +1,8 @@
 package chapter2
 
 import (
-	"Sound_Signal_Process_Golang/utils"
 	"fmt"
+	"go-dsp/utils"
 )
 
 //实验要求一：语音信号叠加

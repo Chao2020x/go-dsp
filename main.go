@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Sound_Signal_Process_Golang/chapter3"
+	"go-dsp/chapter3"
 )
 
 func main() {

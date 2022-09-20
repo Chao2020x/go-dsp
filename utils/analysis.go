@@ -3,8 +3,9 @@ package utils
 import (
 	"math/cmplx"
 
+	"go-dsp/utils/fft"
+
 	"github.com/chfenger/goNum"
-	"github.com/mjibson/go-dsp/fft"
 )
 
 //短时时域分析
